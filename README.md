@@ -27,7 +27,7 @@ The HQCNN framework consists of a **Quantum Neural Network (QNN)** or **quantum 
 
 - **Dataset**: We used the **German Traffic Sign Recognition Benchmark (GTSRB)** dataset, consisting of over 50,000 real-world images of traffic signs in 43 classes. For our experiment, we filtered out classes with fewer than 500 images, resulting in 23 classes with a total of 33,000 images. The data was split into training and validation sets in an 8:2 ratio.
 - **Quantum Convolution**: 
-  - Images were encoded into quantum states using angle embedding with Ry rotation gates.
+  - Images were encoded into quantum states using angle embedding with Pauli-Y rotation gates.
   - A 2×2 kernel and a stride of 2 were used, and a quantum circuit with four qubits processed the pixel data. The output was a 14×14×4 quantum feature map.
 - **Classical Convolution**:
   - A single classical convolution layer with max pooling, followed by a flattening and dense layer, was used for further processing and classification.
