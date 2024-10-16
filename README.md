@@ -16,12 +16,12 @@ The HQCNN framework consists of a **Quantum Neural Network (QNN)** or **quantum 
      - **Random Quantum Circuits**: The encoded quantum state undergoes unitary transformations using random quantum circuits. In this project we uused Pauli-X and Pauli-Z rotation gates. These circuits extract significant features from small, localized segments of the image.
      - **Quantum Measurement**: The final step collapses the quantum state into classical information. The expectation values of these measurements form the quantum feature map, which serves as the output for this layer.
 
-    ![Quantum Layer](Fig2.pdf) Quantum Layer
+    ![Quantum Layer](Fig2.png) Quantum Layer
 
 2. **Classical CNN**: 
    - The quantum feature maps (output from the quantum layer) are then passed to a standard CNN for further feature extraction and classification. The classical CNN consists of a convolution layer, max pooling, flattening, and dense layers with softmax activation for classification.
 
-   ![HQCNN Architecture](Fig1.pdf) HQCNN Architecture
+   ![HQCNN Architecture](Fig1.png) HQCNN Architecture
 
 ## Experiment Details
 
@@ -37,7 +37,7 @@ The HQCNN framework consists of a **Quantum Neural Network (QNN)** or **quantum 
 
 The performance of HQCNN was assessed using the cross-entropy loss function, accuracy, and average semantic fidelity at each epoch. Below are the comparison plots for different kernel sizes (2x2 and 3x3), showing fidelity, accuracy, and loss metrics.
 
-|![result_2x2](Fig3a.pdf)|![result_3x3](Fig3b.pdf)|
+|![result_2x2](Fig3a.png)|![result_3x3](Fig3b.png)|
 |:-:|:-:|
 |Kernel 2x2|Kernel 3x3|
 
